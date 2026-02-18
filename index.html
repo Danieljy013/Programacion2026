@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html y css </title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML y CSS Showcase</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
     <div class="container">
-    
       <h1>HTML Showcase</h1>
       <p class="subtitle">
         Un muestrario de etiquetas HTML + un CSS que no da pena 😌
@@ -27,78 +28,162 @@
       </nav>
     </div>
   </header>
-  <main  class="container" id="contenido">
+  <main class="container" id="contenido">
     <section class="card" id="texto">
       <h2>1. Texto y estructura</h2>
 
       <article>
         <h3>Encabezados</h3>
-        <p>Esto es un párrafo con <strong>strong "Letra en negrita"</strong>, <em>em "Letra en cursiva"</em>, <mark>mark "Texto resaltado"</mark>, <u>u "Letra en subrayada"</u> y <code>code "Letra en codificacion"</code>.</p>
+        <p>
+          Esto es un párrafo con <strong>strong "Letra en negrita"</strong>, 
+          <em>em "Letra en cursiva"</em>, <mark>mark "Texto resaltado"</mark>, 
+          <u>u "Letra subrayada"</u> y <code>code "Letra en codificación"</code>.
+        </p>
 
         <p>
-          Un enlace: <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
-          Un <abbr title="HyperText Markup Language">HTML "Sobreponer el cursor para mas informacion</abbr> bien usado es oro".
+          Un enlace: 
+          <a href="https://developer.mozilla.org/es/" target="_blank" rel="noopener">MDN Web Docs</a>.
+          Un <abbr title="Aqui se puede conseguir información adicional con el cursor por encima">HTML "Sobreponer el cursor para más información"</abbr> bien usado es oro.
         </p>
 
         <blockquote cite="https://developer.mozilla.org/">
           “La web se construye mejor cuando el HTML tiene significado.”
         </blockquote>
 
-        <p>
-          Texto pequeño: <small>Esto es una nota al pie mental "Para letra mas pequeña"</small>
-        </p>
+        <p><small>Esto es una nota al pie mental "Para letra más pequeña"</small></p>
+        <p>Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.</p>
 
-        <p>
-          Superíndice y subíndice: H<sub>2</sub>O y 2<sup>10</sup>.
-        </p>
-
-        <hr />
-        HR es para un salto de linea temático, no para decorar. Si lo usas para decorar, tu yo del futuro te lo va a reclamar.
+        <hr>
+        HR es para un salto de línea temático, no para decorar. Si lo usas para decorar, tu yo del futuro te lo va a reclamar.
         <hr>
 
         <h3>Detalles expandibles</h3>
         <details>
           <summary>Abre para ver un tip</summary>
-          <p>♥ Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
+          <p>♥ Usa etiquetas semánticas: <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, 
+          <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>… tu yo del futuro te lo agradece.</p>
         </details>
 
         <h3>Preformateado</h3>
         <pre><code>function holaMundo() {
-        console.log("Hola, GitHub!");}</code>
-        </pre>
+  console.log("Hola, GitHub!");
+}</code></pre>
       </article>
-      </section>
-    <section class= "card" id="listas">
-        <h2>2. Listas</h2>
-        <div class="grid">
-            <h3>2.1 Lista desordenada</h3>
-            <ul>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
-                <li>Elemento 4</li>
-            </ul>
-        </div>
-        <h3>2.2 Lista ordenada</h3>
-        <ol>
-            <li>Clonar repositorio</li>
-            <li>Crear rama</li>
-            <li>Hacer cambios</li>
-            <li>Subir cambios</li>
-        </ol>
-        <div>
-        </div>
+    </section>
+    <section class="card" id="listas">
+      <h2>2. Listas</h2>
+
+      <div class="grid">
+        <h3>2.1 Lista desordenada</h3>
+        <ul>
+          <li>Elemento 1</li>
+          <li>Elemento 2</li>
+          <li>Elemento 3</li>
+          <li>Elemento 4</li>
+        </ul>
+      </div>
+
+      <h3>2.2 Lista ordenada</h3>
+      <ol>
+        <li>Clonar repositorio</li>
+        <li>Crear rama</li>
+        <li>Hacer cambios</li>
+        <li>Subir cambios</li>
+      </ol>
     </section>
     <section class="card" id="multimedia">
-        <h2>3. Multimedia</h2>
-        <figure>
-            <img src="https://msmk.university/wp-content/uploads/2025/02/Foto25.jpg" alt="Imagen de ejemplo" loading="lazy">
-            <figcaption>Figura con imagen de ejemplo</figcaption>
-        </figure>
+      <h2>3. Multimedia</h2>
+
+      <figure>
+        <img src="https://msmk.university/wp-content/uploads/2025/02/Foto25.jpg" 
+             alt="Imagen de ejemplo" loading="lazy">
+        <figcaption>Figura con imagen de ejemplo</figcaption>
+      </figure>
+
+      <p>
+        <button type="button" class="btn">Botón</button>
+        <a class="btn ghost" href="#formularios">Ir a formularios</a>
+      </p>
+    </section>
+    <section class="card" id="tablas">
+      <h2>4. Tablas</h2>
+
+      <table>
+        <caption>Tabla de ejemplo</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Ciudad</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>Git status</code></td>
+            <td>Muestra el estado del repositorio</td>
+            <td>Pasto</td>
+          </tr>
+          <tr>
+            <td>Ejemplo 1</td>
+            <td>Ejemplo 1.1</td>
+            <td>Pasto</td>
+          </tr>
+          <tr>
+            <td>Ejemplo 2</td>
+            <td>Ejemplo 2.2</td>
+            <td>Pasto</td>
+          </tr>
+          <tr>
+            <td>Ejemplo 3</td>
+            <td>Ejemplo 3.3</td>
+            <td>Pasto</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="card" id="formularios">
+      <h2>5. Formularios</h2>
+
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+        </div>
+
+        <div class="form-group">
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required placeholder="Ingresa tu contraseña" minlength="5">
+        </div>
+
+        <div class="form-group">
+          <label for="date">Fecha:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="option">Selección:</label>
+          <select name="option" id="option">
+            <option value="">Elige una opción</option>
+            <option value="opcion1">Opción 1</option>
+            <option value="opcion2">Opción 2</option>
+            <option value="opcion3">Opción 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
     </section>
 
   </main>
-
-
 </body>
 </html>
